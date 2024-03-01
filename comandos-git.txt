@@ -1,0 +1,144 @@
+0.  - git init
+    # Inicializa un nuevo repositorio Git en el directorio actual.
+    # Es necesario para comenzar a rastrear los cambios de los archivos en el proyecto.
+    - git config user.name monteero13
+    # Configura el nombre de usuario asociado con los commits en el repositorio.
+    # Es importante configurar un nombre de usuario para que los commits sean identificables.
+    - git config user.email 13albertomontero@gmail.com
+    # Configura la dirección de correo electrónico asociada con los commits en el repositorio.
+    # Es importante configurar una dirección de correo electrónico válida para que los commits sean atribuidos correctamente.
+
+1.  - git clone https://github.com/monteero13/umafactorial.git
+    # Clona un repositorio remoto en un nuevo directorio local.
+    # Es necesario para obtener una copia del repositorio y poder trabajar en él localmente.
+
+2.  - git status
+    # Muestra el estado de los archivos en el directorio de trabajo y en el área de preparación.
+    # Es útil para ver qué archivos han sido modificados y necesitan ser agregados o confirmados.
+    - touch factorial.java
+    # Crea un nuevo archivo llamado factorial.java en el directorio actual.
+    # Es necesario para agregar un nuevo archivo al proyecto.
+    - code factorial.java 
+    # Abre el archivo factorial.java en el editor de código Visual Studio Code.
+    # Es útil para editar el archivo directamente desde la línea de comandos.
+3.  - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+      # Es necesario preparar los cambios para ser incluidos en el próximo commit.
+    - git commit -m "implementacion inicial"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "implementacion inicial".
+      # Es necesario guardar el estado inicial del archivo en el historial del repositorio (ítem 3).
+
+4.  - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+      # Es necesario preparar los cambios para ser incluidos en el próximo commit.
+    - git commit -m "refactorizacion"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "refactorizacion".
+      # Es necesario registrar la refactorización del código en el historial del repositorio (ítem 4).
+
+5.  - git push origin master
+      # Envía los commits locales al repositorio remoto en la rama master.
+      # Es necesario para sincronizar los cambios locales con el repositorio remoto.
+    - git checkout -b recursivo
+      # Crea una nueva rama llamada "recursivo" y cambia a ella.
+      # Es necesario para comenzar a trabajar en una nueva funcionalidad o característica (ítem 5).
+    - git status
+      # Muestra el estado de los archivos en el directorio de trabajo y en el área de preparación.
+      # Es útil para verificar el estado antes de realizar cambios adicionales.
+
+7.  - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+      # Es necesario preparar los cambios para ser incluidos en el próximo commit.
+    - git commit -m "implementación recursiva"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "implementación recursiva".
+      # Es necesario registrar la implementación recursiva en el historial del repositorio (ítem 7).
+    - git push origin recursivo
+      # Envía los commits locales al repositorio remoto en la rama "recursivo".
+      # Es necesario para sincronizar los cambios locales con el repositorio remoto en esa rama.
+
+8.  - git checkout master
+      # Cambia al branch "master".
+      # Es necesario para volver al branch principal y continuar con el desarrollo en esa línea.
+
+10. - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+      # Es necesario preparar los cambios para ser incluidos en el próximo commit.
+    - git commit -m "correccion numeros negativos"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "correccion numeros negativos".
+      # Es necesario registrar la corrección de los números negativos en el historial del repositorio (ítem 10).
+    - git push origin master
+      # Envía los commits locales al repositorio remoto en la rama master.
+      # Es necesario para sincronizar los cambios locales con el repositorio remoto.
+
+11. - git checkout recursivo
+      # Cambia al branch "recursivo".
+      # Es necesario para continuar trabajando en la rama "recursivo".
+    - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+      # Es necesario preparar los cambios para ser incluidos en el próximo commit.
+    - git commit -m "optimizacion"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "optimizacion".
+      # Es necesario registrar la optimización en el historial del repositorio (ítem 11).
+
+12. - git checkout master
+      # Cambia al branch "master".
+      # Es necesario para volver al branch principal y continuar con el desarrollo en esa línea.
+    - git merge recursivo
+      # Fusiona los cambios de la rama "recursivo" en la rama "master".
+      # Es necesario para incorporar los cambios de la rama "recursivo" a la rama principal.
+
+13. - git checkout -b refacIO
+      # Crea una nueva rama llamada "refacIO" y cambia a ella.
+      # Es necesario para iniciar el trabajo en una nueva funcionalidad o característica (ítem 13).
+
+
+14. - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+    - git commit -m "refactorizacion de metodo de entrada"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "refactorizacion de metodo de entrada".
+      # Es necesario para registrar los cambios realizados en el método de entrada del archivo factorial.java en el historial de versiones del repositorio.
+
+15. - git stash
+      # Guarda temporalmente los cambios locales sin confirmar.
+    - git checkout master
+      # Cambia al branch "master".
+      # Es necesario para cambiar al branch "master" y realizar los cambios relacionados en ese branch.
+
+16. - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+    - git commit -m "cambio de long a BigInteger"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "cambio de long a BigInteger".
+    - git push origin master
+      # Envía los commits locales al repositorio remoto en la rama master.
+    - git checkout refacIO
+      # Cambia al branch "refacIO".
+    - git stash pop
+      # Aplica los cambios guardados temporalmente al branch actual.
+    - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+    - git commit -m "refactorizacion de metodo de salida"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "refactorizacion de metodo de salida".
+      # Es necesario para registrar los cambios realizados en el método de salida del archivo factorial.java en el historial de versiones del repositorio.
+
+17. - git checkout master
+      # Cambia al branch "master".
+    - git merge refacIO
+      # Fusiona los cambios de la rama "refacIO" en la rama "master".
+      # Es necesario para incorporar los cambios realizados en el branch "refacIO" al branch "master".
+
+19. - git add factorial.java
+      # Agrega los cambios realizados en el archivo factorial.java al área de preparación.
+    - git commit -m "mezcla de rama refacIO"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "mezcla de rama refacIO".
+    - git push origin master
+      # Envía los commits locales al repositorio remoto en la rama master.
+      # Es necesario para actualizar el repositorio remoto con los cambios realizados en el branch "master" después de la fusión.
+
+21. - git add comandos-git.txt
+      # Agrega los cambios realizados en el archivo comandos-git.txt al área de preparación.
+    - git commit -m "adicion de historial de línea de comandos"
+      # Confirma los cambios agregados al área de preparación en el historial de versiones del repositorio con el mensaje "adicion de historial de línea de comandos".
+
+22. - git push --all origin
+      # Envía todos los commits locales al repositorio remoto en todas las ramas.
+    - gitk --all
+      # Abre una interfaz gráfica para visualizar el historial de versiones y ramas del repositorio.
